@@ -1,0 +1,32 @@
+@use "../utilities/" as *;
+
+.topbar {
+  padding: 10px;
+  background-color: var(--clr-primary);
+  font-size: 14px;
+  color: var(--clr-white);
+}
+
+.topbar-left {
+  i {
+    margin-right: 5px;
+  }
+  a {
+    margin-right: 10px;
+    &:hover {
+      color: var(--clr-white);
+    }
+  }
+}
+
+.topbar-right {
+  a {
+    color: var(--clr-white);
+    opacity: 0.7;
+    margin-right: 10px;
+    transition: opacity 250ms ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

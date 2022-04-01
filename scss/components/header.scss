@@ -1,0 +1,124 @@
+@use "../utilities/" as *;
+
+.header {
+  background-color: var(--clr-white);
+  color: var(--clr-title);
+  padding: 20px 0;
+  transition: all 250ms ease-in-out;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  span {
+    color: var(--clr-primary);
+  }
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav {
+  flex: 1;
+}
+
+.nav__mobile {
+  position: fixed;
+  inset: 0;
+  padding: 10px 20px 40px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  .hamburger {
+    color: white;
+  }
+  .nav__list {
+    display: block;
+    position: relative;
+    background-color: var(--clr-white);
+    height: calc(100% - 40px);
+    padding: 20px 40px 20px 40px;
+  }
+}
+
+.nav__list {
+  display: none;
+  margin-bottom: 0;
+  @include breakpoint(lg) {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    gap: 28px;
+  }
+}
+
+.nav__item {
+  position: relative;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  &:hover {
+    color: var(--clr-primary);
+  }
+  @include breakpoint(lg) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      left: 0;
+      height: 2px;
+      background-color: var(--clr-primary);
+      transition: width 250ms ease-in-out;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--clr-primary);
+}
+
+.submenu__trigger {
+  position: relative;
+  user-select: none;
+  @include breakpoint(lg) {
+    &:hover {
+      .submenu__list {
+        display: block;
+      }
+    }
+  }
+}
+
+.submenu__list {
+  padding: 10px 20px;
+  margin: 10px 20px;
+  display: none;
+  background-color: var(--clr-white);
+  @include breakpoint(lg) {
+    // display: block;
+    position: absolute;
+    width: 200%;
+    margin-left: 0;
+  }
+}
+
+.submenu-active {
+  display: block;
+}
+
+.submenu__item {
+  margin-bottom: 10px;
+}

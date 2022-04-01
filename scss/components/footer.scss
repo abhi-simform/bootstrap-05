@@ -1,0 +1,55 @@
+@use "../utilities/" as *;
+
+.footer__contact {
+  p {
+    font-size: 14px;
+    color: #777777;
+  }
+}
+
+.footer__links {
+  h4 {
+    font-size: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li,
+  p {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+    i {
+      color: var(--clr-primary);
+    }
+  }
+}
+
+.social__links {
+  i {
+    color: var(--clr-white);
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: var(--clr-primary);
+  }
+}
+
+.footer__bottom {
+  margin-top: 30px;
+  background-color: var(--clr-bg);
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.credits {
+  font-size: 14px;
+  a {
+    color: var(--clr-primary);
+  }
+}

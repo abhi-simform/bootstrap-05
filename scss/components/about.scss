@@ -1,0 +1,24 @@
+@use "../utilities/" as *;
+
+.about {
+  background-color: var(--clr-secondary);
+}
+
+.about__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.about__text {
+  font-style: italic;
+  margin: 0 0 16px 0;
+}
+
+.about__icon {
+  font-size: 24px;
+  padding: 20px;
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
+}

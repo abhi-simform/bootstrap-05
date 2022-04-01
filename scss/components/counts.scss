@@ -1,0 +1,30 @@
+@use "../utilities/" as *;
+
+.counts__icon {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+  padding: 10px;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  top: 25px;
+  border: 6px solid var(--clr-white);
+}
+
+.counts__content {
+  background-color: var(--clr-bg);
+  padding: 30px 30px 25px 30px;
+}
+
+.counts__number {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 600;
+  color: #062b5b;
+}
+
+.counts__category {
+  font-size: 14px;
+  line-height: 21px;
+}

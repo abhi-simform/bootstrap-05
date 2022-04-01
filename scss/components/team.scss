@@ -1,0 +1,49 @@
+@use "../utilities/" as *;
+
+.team {
+  background-color: var(--clr-secondary);
+}
+
+.team__card {
+  &:hover {
+    .team__social {
+      bottom: 10px;
+      opacity: 1;
+    }
+  }
+}
+
+.team__img--wrapper {
+  position: relative;
+}
+
+.team__social {
+  position: absolute;
+  bottom: 50px;
+  gap: 15px;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+  i {
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 7px;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+  }
+}
+
+.team__info {
+  padding: 25px 15px;
+  background-color: var(--clr-white);
+}
+
+.team__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.team__post {
+  font-size: 13px;
+  color: #aaaaaa;
+}

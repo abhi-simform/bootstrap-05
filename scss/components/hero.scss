@@ -1,0 +1,64 @@
+@use "../utilities/" as *;
+
+.hero {
+  height: calc(100vh - 122px);
+  display: grid;
+  align-items: center;
+  background-image: url("../../assets/img/hero-bg.webp");
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero__title {
+  font-size: 28px;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  span {
+    color: var(--clr-primary);
+  }
+  @include breakpoint(lg) {
+    font-size: 48px;
+  }
+}
+
+.hero__text {
+  font-size: 18px;
+  font-family: var(--font-roboto);
+  @include breakpoint(lg) {
+    font-size: 24px;
+  }
+}
+
+.button-1 {
+  text-transform: uppercase;
+  font-family: var(--font-roboto);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--clr-white);
+  line-height: 20px;
+  padding: 10px 30px;
+  background-color: var(--clr-primary);
+  @include breakpoint(lg) {
+    font-size: 14px;
+  }
+}
+
+.button-2 {
+  margin-left: 25px;
+  i {
+    line-height: 1;
+    font-size: 32px;
+    color: var(--clr-primary);
+  }
+  span {
+    font-size: 13px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    margin-left: 10px;
+    @include breakpoint(lg) {
+      font-size: 16px;
+    }
+  }
+}

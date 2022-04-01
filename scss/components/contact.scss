@@ -1,0 +1,39 @@
+@use "../utilities/" as *;
+
+.info__box {
+  padding: 20px 0 30px 0;
+  text-align: center;
+  i {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 5px;
+    color: var(--clr-primary);
+    border: 4px dotted var(--clr-bg);
+  }
+  h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #777777;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.php-email-form {
+  padding: 30px;
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  button {
+    padding: 10px 30px;
+    color: var(--clr-white);
+    background: var(--clr-primary);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+  }
+}

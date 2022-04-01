@@ -1,0 +1,13 @@
+@use "../utilities/" as *;
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-primary: hsl(214, 87%, 49%);
+  --clr-secondary: hsl(218, 80%, 98%);
+  --clr-bg: hsl(213, 85%, 95%);
+  --clr-title: hsl(0, 0%, 13%);
+  --clr-body: hsl(0, 0%, 27%);
+  --swiper-theme-color: hsl(214, 87%, 49%);
+  --bs-primary: hsl(214, 87%, 49%);
+}
